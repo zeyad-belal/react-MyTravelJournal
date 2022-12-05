@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+}
+
+/* navbar  */
+nav {
+  background-color: #f55a5a;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+nav span {
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.4608px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+}
+
+/* card  */
+.card--container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto ;
+}
+.card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto ;
+}
+
+.card-img-container {
+  max-width: 25%;
+  height: auto;
+  margin-right: 20px;
+}
+.card-img{
+  max-width: 100%;
+  min-width: 125px;
+  border-radius: 5px;
+}
+.card--info {
+  max-width: 75%;
+}
+
+.location-sign {
+  margin-right: 4px;
+  height: 12px;
+  width: 8px;
+}
+
+.card--location {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  margin-right: 12px;
+  color: #2B283A;
+}
+.maps-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 12px;
+  color: #918e9b;
+}
+.card--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 7px 0 14px ;
+  color: #2B283A;
+}
+.card--date {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+  margin: 7px 0 9px;
+  color: #2B283A;
+}
+.card--description{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 150%;
+  color: #2B283A;
+  max-width: 800px;
+}
+hr {
+  color: #F5F5F5;
+  width: 478px;
+  border: 1px solid #F5F5F5;
+  margin: 18px auto;
+}
+
+@media (max-width:785px) {
+  .card--container {
+    max-width: 80%;
+  }
+  .card {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .card-img-container{
+    margin-bottom: 20px;
+  }
+}
+
+
+/* small screens */
+@media (min-width: 786px) {
+  .card--container {
+    width: 750px;
+  }
+}
+
+/* medium screens */
+@media (min-width: 992px) {
+  .card--container {
+    width: 970px;
+  }
+}
+
+/* large screens */
+@media (min-width: 1200px) {
+  .card--container {
+    width: 1170px;
+  }
+}
